@@ -1,31 +1,31 @@
 version: '3'
 services:
   
-  # mf-container:
-  #   stdin_open: true
-  #   build:
-  #     dockerfile: Dockerfile.dev
-  #     context: mf-container
-  #   volumes:
-  #     - /app/node_modules
-  #     - ./mf-container:/app
-  #   environment:
-  #     - NODE_ENV=development
-  #   ports:
-  #     - 8080:8080
+  mf-container:
+    stdin_open: true
+    build:
+      dockerfile: Dockerfile.dev
+      context: mf-container
+    volumes:
+      - /app/node_modules
+      - ./mf-container:/app
+    environment:
+      - NODE_ENV=development
+    ports:
+      - 8080:8080
 
-  # mf-marketing:
-  #   stdin_open: true
-  #   build:
-  #     dockerfile: Dockerfile.dev
-  #     context: mf-marketing
-  #   volumes:
-  #     - /app/node_modules
-  #     - ./mf-marketing:/app
-  #   environment:
-  #     - NODE_ENV=development
-  #   ports:
-  #     - 8081:8081
+  mf-marketing:
+    stdin_open: true
+    build:
+      dockerfile: Dockerfile.dev
+      context: mf-marketing
+    volumes:
+      - /app/node_modules
+      - ./mf-marketing:/app
+    environment:
+      - NODE_ENV=development
+    ports:
+      - 8081:8081
 
   mf-auth:
     stdin_open: true
@@ -41,15 +41,15 @@ services:
     ports:
       - 8082:8082
 
-  # mf-dashboard:
-  #   stdin_open: true
-  #   build:
-  #     dockerfile: Dockerfile.dev
-  #     context: mf-dashboard
-  #   volumes:
-  #     - /app/node_modules
-  #     - ./mf-dashboard:/app
-  #   environment:
-  #     - NODE_ENV=developpment
-  #   ports:
-  #     - 8083:8083
+  mf-dashboard:
+    stdin_open: true
+    build:
+      dockerfile: Dockerfile.dev
+      context: mf-dashboard
+    volumes:
+      - /app/node_modules
+      - ./mf-dashboard:/app
+    environment:
+      - NODE_ENV=developpment
+    ports:
+      - 8083:8083
